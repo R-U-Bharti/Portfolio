@@ -13,7 +13,7 @@ function Home() {
                 <div className="text-4xl md:text-[6vh] font-bold  animate__animated animate__fadeInLeft animate__faster">Welcome To My Portfolio</div>
                 <div className="flex md:flex-row flex-col md:items-end h-[12vh] md:h-auto  animate__animated animate__fadeInLeft animate__faster">
                     <div className="text-lg md:text-[3vh] pb-1">I am &nbsp;</div>
-                    <div className="text-5xl md:text-[6.5vh] md:pt-2 font-semibold text-neon">
+                    <div className="text-4xl md:text-[6.5vh] md:pt-2 font-semibold text-neon">
                         <Typewriter
                             options={{
                                 strings: ['Kumar R U Bharti', 'a Software Developer'],
