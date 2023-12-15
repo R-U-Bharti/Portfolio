@@ -51,7 +51,7 @@ const Navbar = () => {
 
       
       {/* =======Mobile Menu======= */}
-      <div className={`w-full md:hidden mt-2 flex flex-col items-center justify-center bg-none dark:bg-zinc-900 bg-gray-200 transition-all duration-300 gap-8 text-xl overflow-clip ${isToggled ? 'h-[95vh] border-t-2 border-b-2 border-black dark:border-white animate__animated animate__fadeIn animate__faster' : 'h-[0vh]'}`}>
+      <div className={`w-full md:hidden mt-2 flex flex-col items-center justify-center bg-none dark:bg-zinc-900 bg-gray-200 transition-all duration-300 gap-8 text-xl overflow-clip ${isToggled ? 'h-[85vh] border-t-2 border-b-2 border-black dark:border-white animate__animated animate__fadeIn animate__faster' : 'h-[0vh]'}`}>
         {
           menu?.map((elem) => <>
             <a onClick={() => handleToggleClick()} href={elem?.link} className='group hover:text-neon font-semibold hover:drop-shadow pb-2 w-[40vw] text-center'>
