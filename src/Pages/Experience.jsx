@@ -37,7 +37,7 @@ const Experience = () => {
 
         <ExperienceRow
           image={'./gtropy.png'}
-          title={'Gtropy'}
+          title={'Gtropy (MapmyIndia)'}
           post={"Software Developer"}
           desc={'Working on the development of a browser and mobile based application.'}
           skill={["ReactJs, ", "React Native, ", "Pure CSS, ", "Tailwind CSS, ", "Redux"]}
