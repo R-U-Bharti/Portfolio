@@ -23,6 +23,12 @@ function Home() {
                         />
                     </div>
                 </div>
+                    <p className="w-full mt-4">
+                        As a passionate, I'm thrilled to announce that I'm open for new and exciting projects. From 🚀 WEB DEVELOPMENT to APP CREATION 🚀, let's collaborate and bring your visions to reality.  💼✨ Drop me a message and let's get started.
+                        <br />
+                        <br />
+                        Connect 🤝 me through below 👇 links 📎
+                    </p>
                 <div className="flex gap-2 md:gap-4 justify-between md:w-[50%] w-full wrapper">
                     <li onClick={() => window.open('mailto:kumarrubharti.rtcit@gmail.com')} class="icon h-[5.5vh] md:h-[7vh] w-[12.5vw] md:w-[7vw] instagram animate__animated animate__fadeInUp animate__faster border-2 border-red-400 dark:border-red-200 text-red-400 dark:text-red-200 hover:bg-red-600 hover:text-white transition-all duration-300 cursor-pointer p-2 rounded-full  drop-shadow-icon-1">
                         <span class="tooltip">Mail</span>
