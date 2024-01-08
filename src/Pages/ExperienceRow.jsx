@@ -6,14 +6,14 @@ const ExperienceRow = (props) => {
     <>
       <div className='card w-full md:w-[48%] dark:bg-[#ffffff2c] bg-[#e6e6e6] p-4 md:p-6 flex md:flex-row flex-col gap-4 items-center hover:shadow-xl shadow-md border border-gray-300 dark:border-gray-600 hover:scale-105 transition-all duration-300 ease-in-out'>
 
-        <div className='flex items-center justify-center flex-col w-[30%]'>
-          <div className=''>
-            <img src={props?.image} className='md:w-[7vw] aspect-[3/2] object-contain ' alt="" srcset="" />
+        <div className='flex items-center justify-center flex-col w-full md:w-[30%]'>
+          <div className='flex justify-center mb-3'>
+            <img src={props?.image} className='md:w-[7vw] w-1/2 aspect-[3/2] object-contain ' alt="" srcset="" />
           </div>
-          <div className='mb-1 font-semibold text-center'>
+          <div className='-mt-5 font-semibold text-center'>
             {props?.title}
           </div>
-          <div className='flex md:flex-row flex-col items-center text-xs md:text-sm gap-1 md:gap-2 '>
+          <div className='flex flex-row items-center text-xs md:text-sm gap-1 md:gap-2 '>
             <span>
               ({props?.fDate}
             </span>
