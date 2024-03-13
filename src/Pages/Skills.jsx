@@ -5,7 +5,7 @@ const Skills = () => {
 
   useEffect(() => {
     const loadImages = async () => {
-      const filesContext = await importAll('../assets/logo', /\.png/);
+      const filesContext = await importAll('../../public/logo', /\.png/);
       const files = await Promise.all(filesContext);
       setLogoList(files);
     };
@@ -18,7 +18,7 @@ const Skills = () => {
     const keys = [];
     const files = [];
 
-    const contextModules = await import.meta.glob('../assets/logo/*.png');
+    const contextModules = await import.meta.glob('../../public/logo/*.png');
 
     for (const path in contextModules) {
       if (regex.test(path)) {
