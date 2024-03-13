@@ -8,7 +8,7 @@ const ExperienceRow = (props) => {
 
         <div className='flex items-center justify-center flex-col w-full md:w-[30%]'>
           <div className='flex justify-center mb-5'>
-            <img src={props?.image} className='md:w-[7vw] w-1/2 h-[3rem] p-1 object-contain bg-white' alt="" srcset="" />
+            <img src={props?.image} className='md:w-[7vw] w-[5rem] h-[3rem] p-1 object-contain bg-white' alt="" srcset="" />
           </div>
           <div className='-mt-5 font-semibold text-center'>
             {props?.title}
