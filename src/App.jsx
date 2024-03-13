@@ -37,7 +37,7 @@ function App() {
   const handleBackToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Optionally, add smooth scrolling animation
+      behavior: 'smooth',
     });
   };
 
@@ -88,15 +88,15 @@ function App() {
           <div id='training' className='h-[90vh]'>
             <Training />
           </div>
-        </Fade>
+        </Fade> */}
 
-        <Fade bottom>
+        {/* <Fade bottom>
           <div id='skills' className='h-[90vh]'>
             <Skills />
           </div>
-        </Fade>
+        </Fade> */}
 
-        <Fade bottom>
+        {/* <Fade bottom>
           <div id='Contact' className='h-[90vh] pb-4 md:pb-8'>
             <Contact />
           </div>

@@ -16,10 +16,10 @@ const Experience = () => {
         {/* <Atropos> */}
         <ExperienceRow
           image={'./zeqoon.png'}
-          title={'Zeqon Enterprises'}
-          post={"Web Developer"}
-          desc={'Developing College and Universities websites'}
-          skill={["HTML, ", "CSS, ", "Bootstrap"]}
+          // title={'Zeqon Enterprises'}
+          post={"Zeqon Enterprises"}
+          desc={'Developed College and Universities websites'}
+          skill={"Part Time"}
           fDate={"April '22"}
           tDate={"July '22"} />
         {/* </Atropos> */}
@@ -27,20 +27,30 @@ const Experience = () => {
         {/* <Atropos> */}
         <ExperienceRow
           image={'./aadrika.png'}
-          title={'Aadrika Enterprises'}
-          post={"Software Developer"}
+          // title={'Aadrika Enterprises'}
+          post={"Aadrika Enterprises"}
           desc={'Worked on the development of a browser and mobile based application for E-Governance projects'}
-          skill={["ReactJs, ", "React Native, ", "Tailwind CSS, ", "Redux"]}
+          skill={"Full Time"}
+          fDate={"Aug '22"}
+          tDate={"Dec '23"}
+        />
+
+        <ExperienceRow
+          image={'./framework.png'}
+          // title={'Aadrika Enterprises'}
+          post={"Framework Futuristic"}
+          desc={'Worked on the development of a browser and mobile based application for News Channel'}
+          skill={"Freelance"}
           fDate={"Aug '22"}
           tDate={"Dec '23"}
         />
 
         <ExperienceRow
           image={'./gtropy.png'}
-          title={'Gtropy (MapmyIndia)'}
-          post={"Software Developer"}
+          // title={'Gtropy (MapmyIndia)'}
+          post={"GTROPY ( Mapmyindia )"}
           desc={'Working on the development of a browser and mobile based application.'}
-          skill={["ReactJs, ", "React Native, ", "Pure CSS, ", "Tailwind CSS, ", "Redux"]}
+          skill={"Full Time"}
           fDate={"Jan '24"}
           tDate={"till"}
         />
