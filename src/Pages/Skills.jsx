@@ -43,7 +43,7 @@ const Skills = () => {
                 width={100}
                 height={100}
               />
-              <div className='text-center pr-16 md:pr-0 font-semibold text-md'>{elem.default.split('/').pop().split('.')[0]}</div>
+              <div className='text-center pr-16 md:pr-0 font-semibold text-md'>{(elem.default.split('/').pop().split('.')[0])?.split('-')[0]}</div>
             </div>
           ))}
         </div>
