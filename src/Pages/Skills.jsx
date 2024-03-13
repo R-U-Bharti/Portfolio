@@ -1,41 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Skills = () => {
+  const [logoList, setLogoList] = useState([]);
 
-  const filesFun = () => {
+  useEffect(() => {
+    const loadImages = async () => {
+      const filesContext = await importAll('../assets/logo', /\.png/);
+      const files = await Promise.all(filesContext);
+      setLogoList(files);
+    };
 
-    const files = require.context('../../public', false, /\.png/)
-    const fileName = files.keys()
-    let logoList = fileName?.map(elem => `${elem?.slice(1,)}`)
-    console.log("Logo List: ", logoList)
+    loadImages();
+  }, []);
 
-    return logoList;
+  // Function to import all files in the context
+  const importAll = async (context, regex) => {
+    const keys = [];
+    const files = [];
 
-  }
+    const contextModules = await import.meta.glob('../assets/logo/*.png');
+
+    for (const path in contextModules) {
+      if (regex.test(path)) {
+        keys.push(path);
+        files.push(await contextModules[path]());
+      }
+    }
+
+    return files;
+  };
 
   return (
     <>
-      <div className='h-screen w-screen flex items-center justify-center'>
-        <div className="flex flex-wrap gap-4 p-4">
-          {
-            Array.isArray(filesFun()) &&
-            filesFun()?.slice(1,)?.map((elem, index) =>
-              <div className="flex flex-col items-center justify-end w-full md:w-[calc(100%/8)] gap-1">
-                <img
-                  key={index}
-                  src={elem}
-                  alt="Logo"
-                  width={100}
-                  height={100}
-                />
-                <div style={{ textAlign: 'center' }}>{elem?.slice(1,).split('.')[0]}</div>
-              </div>
-            )
-          }
+      <div className='h-max w-screen flex items-start justify-center'>
+        <div className="flex flex-wrap gap-10 p-4">
+          {logoList.slice(1,).map((elem, index) => (
+            <div className="flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/8)] gap-2" key={index}>
+              <img
+                className='md:w-[10vw] w-[80%] border border-gray-200 dark:border-gray-50 h-[7rem] md:h-[5rem] p-2 rounded-md object-contain bg-[#fffffff5] shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                src={elem.default}
+                alt="Logo"
+                width={100}
+                height={100}
+              />
+              <div className='text-center pr-16 md:pr-0 font-semibold text-md'>{elem.default.split('/').pop().split('.')[0]}</div>
+            </div>
+          ))}
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

@@ -67,7 +67,7 @@ function App() {
         </div>
 
         <Fade bottom>
-          <div id='experience' className='h-full md:h-[105vh] bg-transparent backdrop-blur-lg border-t border-b relative'>
+          <div id='experience' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
             <div className=' p-4 md:p-20 z-50'>
               <Heading title={'Work Experience'} logo={'./experienceLogo.webp'} />
               <Experience />
@@ -90,17 +90,23 @@ function App() {
           </div>
         </Fade> */}
 
-        {/* <Fade bottom>
-          <div id='skills' className='h-[90vh]'>
-            <Skills />
+        <Fade bottom>
+            <div id='skills' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
+              <div className=' p-4 md:px-20 md:py-10 z-50'>
+                <Heading title={'Skills'} logo={'./experienceLogo.webp'} />
+                <Skills />
+              </div>
           </div>
-        </Fade> */}
+        </Fade>
 
-        {/* <Fade bottom>
-          <div id='Contact' className='h-[90vh] pb-4 md:pb-8'>
-            <Contact />
+        <Fade bottom>
+          <div id='Contact' className='h-full md:h-max backdrop-blur-lg border-t border-b relative'>
+            <div className=' p-4 z-50'>
+              <Heading title={"Lets' Talk"} logo={'./experienceLogo.webp'} />
+              <Contact />
+            </div>
           </div>
-        </Fade> */}
+        </Fade>
 
         {
           isVisible &&
@@ -108,11 +114,11 @@ function App() {
             <a className='transform group-hover:translate-y-6 text-white '><BiSolidUpArrow /></a>
           </div>}
 
+
+      </div>
         {/* <div className=' dark:bg-black bg-white text-center dark:text-white text-black text-xs border-t border-red-500 py-1'>
           Design @ R U Bharti
         </div> */}
-
-      </div>
     </>
   )
 }
