@@ -41,7 +41,7 @@ const Experience = () => {
           post={"Framework Futuristic"}
           desc={'Worked on the development of a browser and mobile based application for News Channel'}
           skill={"Freelance"}
-          fDate={"Aug '22"}
+          fDate={"Oct '23"}
           tDate={"Dec '23"}
         />
 
