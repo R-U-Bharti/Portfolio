@@ -51,7 +51,7 @@ function App() {
           style: {
             background: 'rgba(255, 255, 255, 0.25)',
             backdropFilter: 'blur(5px)',
-            color: 'rgba(0, 0, 0, 0.85)',
+            color: '#4CAF50',
             borderRadius: '10px',
             boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
             userSelect: 'none'
