@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (!formData) {
-      toast.error("Oops! You missed to fill.")
+      toast.success("Oops! You missed to fill.")
       return
     }
 
