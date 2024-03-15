@@ -13,6 +13,7 @@ import { BiSolidUpArrow } from 'react-icons/bi'
 import Heading from './Pages/Heading'
 import 'atropos/css'
 import Atropos from 'atropos/react';
+import { Toaster } from 'react-hot-toast'
 
 function App() {
 
@@ -43,6 +44,9 @@ function App() {
 
   return (
     <>
+
+      <Toaster />
+
       <div className='relative noto'>
 
 
