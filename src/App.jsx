@@ -5,8 +5,6 @@ import 'animate.css'
 import Home from './Pages/Home'
 import Skills from './Pages/Skills'
 import Experience from './Pages/Experience'
-import Education from './Pages/Education'
-import Training from './Pages/Training'
 import Contact from './Pages/Contact'
 import Fade from 'react-reveal/Fade'
 import { BiSolidUpArrow } from 'react-icons/bi'
@@ -92,12 +90,12 @@ function App() {
           </ul>
 
           <Navbar />
-          <Fade bottom >
+          <Fade duration={300} bottom >
             <Home />
           </Fade>
         </div>
 
-        <Fade bottom>
+        <Fade duration={300} bottom>
           <div id='experience' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
             <div className=' p-4 md:p-20 z-50'>
               <Heading title={'Work Experience'} logo={'./experienceLogo.webp'} />
@@ -106,7 +104,7 @@ function App() {
           </div>
         </Fade>
 
-        <Fade bottom>
+        <Fade duration={300} bottom>
           <div id='skills' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
             <div className=' p-4 md:px-20 md:py-10 z-50'>
               <Heading title={'Skills'} logo={'./experienceLogo.webp'} />
@@ -115,7 +113,7 @@ function App() {
           </div>
         </Fade>
 
-        <Fade bottom>
+        <Fade duration={300} bottom>
           <div id='Contact' className='h-full md:h-max backdrop-blur-lg border-t border-b relative'>
             <div className=' p-4 z-50'>
               <Heading title={"Lets' Talk"} logo={'./experienceLogo.webp'} />
