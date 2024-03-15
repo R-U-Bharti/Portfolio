@@ -57,6 +57,8 @@ const Contact = () => {
       if (response.ok) {
         // Handle successful form submission
         toast.success('Message sent successfully');
+        e.target.reset()
+        e.target.querySelector('textarea').value = '';
       } else {
         // Handle error
         toast.error('Please try again later.');
