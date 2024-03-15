@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Home", link: "#home" },
     { name: "Experience", link: "#experience" },
     { name: "Skills", link: "#skills" },
-    { name: "Education", link: "#education" },
+    // { name: "Education", link: "#education" },
     // { name: "Training", link: "#training" },
     // { name: "Download CV", link: cv_url },
     { name: "Contact", link: "#Contact" },
