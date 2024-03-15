@@ -19,7 +19,7 @@ const Experience = () => {
           // title={'Zeqon Enterprises'}
           post={"Zeqon Enterprises"}
           desc={'Developed College and Universities websites'}
-          skill={"Part Time"}
+          skill={"Freelance"}
           fDate={"April '22"}
           tDate={"July '22"} />
         {/* </Atropos> */}
