@@ -45,7 +45,19 @@ function App() {
   return (
     <>
 
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          duration: 1500,
+          style: {
+            background: 'rgba(255, 255, 255, 0.25)',
+            backdropFilter: 'blur(5px)',
+            color: 'rgba(0, 0, 0, 0.85)',
+            borderRadius: '10px',
+            boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+            userSelect: 'none'
+          },
+        }}
+      />
 
       <div className='relative noto'>
 
@@ -79,7 +91,7 @@ function App() {
           </div>
         </Fade>
 
-       {/* <Fade bottom>
+        {/* <Fade bottom>
           <div id='education' className='h-[90vh]'>
             <div className=' p-4 md:p-20 z-50'>
               <Heading title={'Education'} />
@@ -95,11 +107,11 @@ function App() {
         </Fade> */}
 
         <Fade bottom>
-            <div id='skills' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
-              <div className=' p-4 md:px-20 md:py-10 z-50'>
-                <Heading title={'Skills'} logo={'./experienceLogo.webp'} />
-                <Skills />
-              </div>
+          <div id='skills' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
+            <div className=' p-4 md:px-20 md:py-10 z-50'>
+              <Heading title={'Skills'} logo={'./experienceLogo.webp'} />
+              <Skills />
+            </div>
           </div>
         </Fade>
 
@@ -120,7 +132,7 @@ function App() {
 
 
       </div>
-        {/* <div className=' dark:bg-black bg-white text-center dark:text-white text-black text-xs border-t border-red-500 py-1'>
+      {/* <div className=' dark:bg-black bg-white text-center dark:text-white text-black text-xs border-t border-red-500 py-1'>
           Design @ R U Bharti
         </div> */}
     </>
