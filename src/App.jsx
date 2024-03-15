@@ -106,21 +106,6 @@ function App() {
           </div>
         </Fade>
 
-        {/* <Fade bottom>
-          <div id='education' className='h-[90vh]'>
-            <div className=' p-4 md:p-20 z-50'>
-              <Heading title={'Education'} />
-              <Education />
-            </div>
-          </div>
-  </Fade> */ }
-
-        {/* <Fade bottom>
-          <div id='training' className='h-[90vh]'>
-            <Training />
-          </div>
-        </Fade> */}
-
         <Fade bottom>
           <div id='skills' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b relative'>
             <div className=' p-4 md:px-20 md:py-10 z-50'>
@@ -137,19 +122,20 @@ function App() {
               <Contact />
             </div>
           </div>
+          <div className='z-50 dark:bg-black/80 bg-white/50 text-center font-semibold tracking-wider dark:text-white border-t text-black/80 text-xs py-1'>
+        Designed By @ R U Bharti
+      </div>
         </Fade>
 
         {
           isVisible &&
           <div onClick={handleBackToTop} className='bg-neon w-max md:p-4 p-2 hover:animate-bounce md:text-xl text-md rounded-full fixed bottom-4 right-2 md:bottom-2 md:right-2 hover:bg-neonDark hover:shadow-md hover:shadow-neon border border-neonDark hover:border-neonFade transition-all duration-300 cursor-pointer group'>
             <a className='transform group-hover:translate-y-6 text-white '><BiSolidUpArrow /></a>
-          </div>}
+          </div>
+        }
 
 
       </div>
-      {/* <div className=' dark:bg-black bg-white text-center dark:text-white text-black text-xs border-t border-red-500 py-1'>
-          Design @ R U Bharti
-        </div> */}
     </>
   )
 }
