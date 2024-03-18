@@ -16,9 +16,10 @@ function Home() {
                 <div className="text-4xl md:text-[6vh] font-bold  animate__animated animate__fadeInLeft animate__faster">Welcome To My Portfolio</div>
                 <div className="flex md:flex-row flex-col md:items-end h-[12vh] md:h-auto  animate__animated animate__fadeInLeft animate__faster">
                     <div className="text-lg md:text-[3vh] pb-1">I am &nbsp;</div>
-                    <div className="text-4xl md:text-[6.5vh] md:pt-2 font-semibold text-neon">
+                    <div className="text-4xl writing md:text-[6.5vh] md:pt-2 font-semibold text-neon">
                         <Typewriter
                             options={{
+                                delay: 50,
                                 strings: ['R U Bharti', 'a Software Developer'],
                                 autoStart: true,
                                 loop: true,
@@ -29,7 +30,7 @@ function Home() {
 
                 <div className="flex md:hidden items-center justify-center mt-20 w-full relative  animate__animated animate__fadeInRight animate__faster group">
 
-                    <img src={hand} alt="" className="cat_image w-[100%] overflow-clip ml-10 -mt-6 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
+                    <img  draggable="false"src={hand} alt="" className="cat_image w-[100%] overflow-clip ml-10 -mt-6 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
 
                     <div className="categories absolute h-[70vw] w-[70vw] top-[-2.5rem] left-[8%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-700">
                         <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out left-[34%] top-[-1%] bg-[#c52223]`}>Web Development</span>
@@ -71,7 +72,7 @@ function Home() {
 
             <div className="hidden md:flex items-center justify-center md:w-1/2 w-full relative  animate__animated animate__fadeInRight animate__faster group">
 
-                <img src={hand} alt="" className="cat_image w-[60vw] overflow-clip md:w-[85%] -mt-10 -mr-40 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
+                <img  draggable="false"src={hand} alt="" className="cat_image w-[60vw] overflow-clip md:w-[85%] -mt-10 -mr-40 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
 
                 <div className="categories absolute h-[30vw] w-[30vw] top-[-1.5rem] right-[10%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-700">
                     <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out left-[34%] top-[-1%] bg-[#c52223]`}>Web Development</span>
@@ -89,5 +90,5 @@ function Home() {
 
 export default Home;
     
-{/* <img src='./blob.svg' alt="" className="w-[80vw] md:w-[40vw] dark:opacity-100 opacity-70  transition duration-300 ease-in-out transform group-hover:translate-y-4" />
-    <img src="./profile.png" alt="" className="w-[60vw] overflow-clip md:w-[28vw] top-[-3vh] transition duration-300 ease-in-out group-hover:scale-105 transform group-hover:-translate-y-4 ml-6 md:top-3 absolute" /> */}
+{/* <img  draggable="false"src='./blob.svg' alt="" className="w-[80vw] md:w-[40vw] dark:opacity-100 opacity-70  transition duration-300 ease-in-out transform group-hover:translate-y-4" />
+    <img  draggable="false"src="./profile.png" alt="" className="w-[60vw] overflow-clip md:w-[28vw] top-[-3vh] transition duration-300 ease-in-out group-hover:scale-105 transform group-hover:-translate-y-4 ml-6 md:top-3 absolute" /> */}

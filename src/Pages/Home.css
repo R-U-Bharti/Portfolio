@@ -202,3 +202,20 @@
     transform: rotateY(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+.Typewriter {
+  color: #4d4dff
+}
+
+.Typewriter__wrapper{
+  font-family: "Cookie", cursive !important;
+    font-weight: 700;
+    font-size: 70px;
+    font-style: normal;
+}
+
+.Typewriter__cursor {
+  font-weight: 300 !important;
+}
