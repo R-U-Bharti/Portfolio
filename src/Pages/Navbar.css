@@ -79,7 +79,7 @@
 
   .button {
     position: relative;
-    width: 120px;
+    width: 140px;
     height: 40px;
     background-color: #000;
     display: flex;
@@ -101,7 +101,7 @@
     left: -4px;
     top: -1px;
     margin: auto;
-    width: 128px;
+    width: 148px;
     height: 48px;
     border-radius: 10px;
     background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
