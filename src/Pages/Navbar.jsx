@@ -78,7 +78,7 @@ const Navbar = () => {
       {modalOpen2 && <dialog style={{zIndex: 999}} className='h-screen w-screen top-0 fixed bg-transparent backdrop-blur-lg animate__animated animate__zoomIn animate__faster flex flex-col gap-10 items-center justify-center'>
         <span className=' text-xl text-white bg-red-300 hover:bg-red-400 absolute top-2 md:top-4 right-2 md:right-4 rounded-full p-1 px-3 cursor-pointer z-50 select-none' onClick={() => setModalOpen2(false)}>&times;</span>
         {/* <img  draggable="false"src={'./myPage.png'} alt="" srcset="" className='mix-blend-difference md:p-0 p-4 md:h-[30vw]' /> */}
-        <QRCodeSVG fgColor="#101038" className='border-[10px] rounded-lg' value="https://r-u-bharti.github.io/portfolio/" size={300} />
+        <QRCodeSVG fgColor="#101038" className='border-[10px] border-[#ffffff3f] rounded-lg' value="https://r-u-bharti.github.io/portfolio/" size={300} />
       </dialog>}
 
     </>
