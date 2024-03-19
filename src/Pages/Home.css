@@ -210,9 +210,10 @@
 }
 
 .Typewriter__wrapper{
-  font-family: "Cookie", cursive !important;
-    font-weight: 700;
-    font-size: 70px;
+  /* font-family: "Cookie", cursive !important; */
+    font-weight: 300;
+    text-shadow: 0px 0px 5px rgba(69, 98, 223, 0.979);
+    font-size: 40px;
     font-style: normal;
 }
 

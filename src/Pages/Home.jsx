@@ -32,7 +32,7 @@ function Home() {
 
                     <img  draggable="false"src={hand} alt="" className="cat_image w-[100%] overflow-clip ml-10 -mt-6 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
 
-                    <div className="categories absolute h-[70vw] w-[70vw] top-[-2.5rem] left-[8%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-700">
+                    <div className="categories absolute h-[70vw] w-[70vw] top-[-2.5rem] left-[8%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-600">
                         <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out left-[34%] top-[-1%] bg-[#c52223]`}>Web Development</span>
                         <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out top-[34%] left-[-15%] bg-[#3346eb]`}>App Development</span>
                         <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out top-[34%] right-[-15%] bg-[#971ca0]`}>Landing Page</span>
@@ -74,7 +74,7 @@ function Home() {
 
                 <img  draggable="false"src={hand} alt="" className="cat_image w-[60vw] overflow-clip md:w-[85%] -mt-10 -mr-40 transition-all duration-300 ease-in-out transform group-hover:scale-95 z-10" srcset="" />
 
-                <div className="categories absolute h-[30vw] w-[30vw] top-[-1.5rem] right-[10%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-700">
+                <div className="categories absolute h-[30vw] w-[30vw] top-[-1.5rem] right-[10%] transition-all duration-300 ease-in-out rounded-full border-dashed border border-gray-400 dark:border-gray-600">
                     <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out left-[34%] top-[-1%] bg-[#c52223]`}>Web Development</span>
                     <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out top-[34%] left-[-15%] bg-[#3346eb]`}>App Development</span>
                     <span className={`${freelance} group-hover:scale-125 transition-all duration-300 ease-in-out top-[34%] right-[-15%] bg-[#971ca0]`}>Landing Page</span>
