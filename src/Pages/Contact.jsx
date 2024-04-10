@@ -17,7 +17,7 @@ const Contact = () => {
     }
 
     if (!formData?.name) {
-      toast.error("Your good please.")
+      toast.error("Your good name please.")
       return
     }
 

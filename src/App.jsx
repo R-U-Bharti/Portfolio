@@ -118,7 +118,7 @@ function App() {
         <Fade fraction={0} duration={300} bottom>
           <div id='Contact' className='h-full md:h-max backdrop-blur-lg border-t border-b border-gray-400 dark:border-gray-200 relative'>
             <div className=' p-4 z-50'>
-              <Heading title={"Lets' Talk"} logo={'./experienceLogo.webp'} />
+              <Heading title={"Drop a message"} logo={'./experienceLogo.webp'} />
               <Contact />
             </div>
           </div>
