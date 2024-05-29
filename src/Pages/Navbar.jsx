@@ -42,7 +42,7 @@ const Navbar = () => {
             </>)
           }
           {/* <button className='text-sm button1 px-4 py-2 dark:text-white text-black hover:text-white' onClick={() => setModalOpen(true)} >Download CV</button> */}
-          <a href='./CV.pdf' download={true} className='text-xs button1 px-4 py-2 dark:text-white text-black hover:text-white'>Download CV</a>
+          <a href='./Resume.pdf' download={true} className='text-xs button1 px-4 py-2 dark:text-white text-black hover:text-white'>Download CV</a>
         </div>
 
         <div className="md:hidden visible animate__animated animate__slideInLeft  animate__faster flex flex-col items-center justify-center cursor-pointer drop-shadow transition-all duration-200 w-[4vw] h-[4vw] rounded-full absolute top-2 right-2" onClick={handleToggleClick}>
@@ -63,7 +63,7 @@ const Navbar = () => {
           </>)
         }
         {/* <button onClick={() => (setModalOpen(true), setIsToggled(false))} className='text-sm button px-4 py-2 bg-white dark:bg-black dark:text-white text-black hover:bg-white hover:text-black'>Download CV</button> */}
-          <a href='./CV.pdf' download={true} className='text-sm button px-4 py-2 bg-white dark:bg-black dark:text-white text-black hover:bg-white hover:text-black'>Download CV</a>
+          <a href='./Resume.pdf' download={true} className='text-sm button px-4 py-2 bg-white dark:bg-black dark:text-white text-black hover:bg-white hover:text-black'>Download CV</a>
       </div>
 
       </nav>
@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* {modalOpen && <dialog style={{zIndex: 999}} className='h-screen w-screen top-0 fixed bg-transparent backdrop-blur-lg animate__animated animate__zoomIn animate__faster flex flex-col gap-10 items-center justify-center'>
         <span className=' text-xl text-white bg-red-300 hover:bg-red-400 absolute top-2 md:top-4 right-2 md:right-4 rounded-full p-1 px-3 cursor-pointer z-50 select-none' onClick={() => setModalOpen(false)}>&times;</span>
         <img  draggable="false"src={'./cvQr.png'} alt="" srcset="" className='mix-blend-difference md:p-0 p-4 md:h-[30vw]' />
-        <a href='./CV.pdf' download={true} className='button3 dark:text-[#1BFD9C] text-green-800 dark:hover:text-[#82ffc9] hover:text-white' >Download CV</a>
+        <a href='./Resume.pdf' download={true} className='button3 dark:text-[#1BFD9C] text-green-800 dark:hover:text-[#82ffc9] hover:text-white' >Download CV</a>
       </dialog>} */}
 
       {modalOpen2 && <dialog style={{zIndex: 999}} className='h-screen w-screen top-0 fixed bg-transparent backdrop-blur-lg animate__animated animate__zoomIn animate__faster flex flex-col gap-10 items-center justify-center'>
