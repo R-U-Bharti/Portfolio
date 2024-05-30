@@ -68,7 +68,7 @@ const Skills = () => {
           {logoList?.map((elem, index) => (
             <div className={`${skillCard} skill_card ${index > 7 ? `skill_card${elem?.id}bottom` : `skill_card${elem?.id}top`} flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/10)] gap-2`} key={index}>
               <img
-                className='md:w-[4vw] w-[80%] border border-gray-300 dark:border-gray-500 h-[7rem] rounded-full md:h-[4rem] p-4 object-contain bg-[#fffffff0] dark:bg-[#51505082]  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='md:w-[4vw] w-[80%] border border-gray-300 dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#51505082]  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
@@ -83,7 +83,7 @@ const Skills = () => {
           {logoList?.map((elem, index) => (
             <div className={`${skillCard} skill_card ${index < 8 ? `skill_card${elem?.id}bottom` : `skill_card${elem?.id}top`} flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/10)] gap-2`} key={index}>
               <img
-                className='md:w-[4vw] w-[80%] border border-gray-300 dark:border-gray-500 h-[7rem] rounded-full md:h-[4rem] p-4 object-contain bg-[#fffffff0] dark:bg-[#51505082]  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='md:w-[4vw] w-[80%] border border-gray-300 dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#51505082]  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
