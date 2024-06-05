@@ -8,7 +8,7 @@ const DetailCard = ({ image, heading, content, color, close }) => {
 
                 <div onClick={() => close()} className='absolute cursor-pointer top-0 right-0 bg-red-400 hover:bg-red-500 p-1'><RxCross2 /></div>
 
-                <img style={{backgroundColor: `${color}33`, borderColor: `${color}CC`}} className='border col-span-12 md:col-span-5 p-2 rounded-md h-full object-contain' src={image} alt="image" srcset="" />
+                <img loading='lazy' style={{backgroundColor: `${color}33`, borderColor: `${color}CC`}} className='border col-span-12 md:col-span-5 p-2 rounded-md h-full object-contain' src={image} alt="image" srcset="" />
 
                 <div className="col-span-12 md:col-span-7">
                     <h1 style={{ color: color }} className='font-bold text-2xl'>{heading}</h1>

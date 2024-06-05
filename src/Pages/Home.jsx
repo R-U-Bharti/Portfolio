@@ -17,14 +17,12 @@ function Home() {
     const freelance = 'absolute text-xs w-max md:w-[150px] select-none rounded-full text-center px-4 py-1 text-white shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
 
     const dialogRef = useRef(null);
-    const [modal, setModal] = useState('0')
     const [color, setColor] = useState('')
     const [heading, setHeading] = useState('')
     const [content, setContent] = useState('')
     const [image, setImage] = useState(null)
 
     const openModal = (arg, head, colr) => {
-        setModal(arg)
         setHeading(head)
         setColor(colr)
 
@@ -56,6 +54,12 @@ function Home() {
         }
 
         dialogRef.current.showModal();
+    }
+
+    const closeFun = () => {
+        dialogRef.current.close()
+        setContent('')
+        setImage(null)
     }
 
     return (
@@ -137,7 +141,7 @@ function Home() {
             </div>
 
             <dialog ref={dialogRef} className="animate__animated animate__zoomIn animate__faster bg-transparent outline-none">
-                <DetailCard image={image} heading={heading || ''} content={content || ''} color={color} close={() => dialogRef.current.close()} />
+                <DetailCard image={image} heading={heading || ''} content={content || ''} color={color} close={() => closeFun()} />
             </dialog>
 
         </>
