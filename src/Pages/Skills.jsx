@@ -111,7 +111,7 @@ const Skills = () => {
         <div ref={circleRef1} onMouseEnter={() => setToggle(false)} onMouseLeave={() => setToggle(true)} className={`${toggle ? 'skillList1' : ''} md:block hidden absolute w-[70vw] h-[70vw] bottom-[-14vw] transition-all duration-300 ease-in-out rounded-full border border-gray-50 dark:border-gray-100`}>
           {item?.length > 0 && logoList?.map((elem, index) => (
             <>
-              <div style={{ position: 'absolute', translate: '-50% -50%', left: `${item[index]?.x}px`, top: `${item[index]?.y}px` }} className={`${skillCard} skill_card border border-gray-300 dark:border-gray-500 rounded-full w-[70px] h-[70px] hover:bg-white hover:scale-150 group transition-all duration-200 flex flex-col md:items-center md:justify-end gap-2  bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]`} key={index}>
+              <div style={{ position: 'absolute', translate: '-50% -50%', left: `${item[index]?.x}px`, top: `${item[index]?.y}px` }} className={`${skillCard} skill_card border border-gray-300 dark:border-gray-500 rounded-full w-[70px] h-[70px] hover:bg-white hover:scale-125 group transition-all duration-200 flex flex-col md:items-center md:justify-end gap-2  bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]`} key={index}>
                 <img
                   className='w-[100px] h-[100px] p-0.5 object-contain'
                   src={elem.image}
@@ -126,18 +126,7 @@ const Skills = () => {
         <div ref={circleRef2} onMouseEnter={() => setToggle(false)} onMouseLeave={() => setToggle(true)} className={`${toggle ? 'skillList2' : ''} md:block hidden absolute w-[55vw] h-[55vw] bottom-[-7vw] transition-all duration-300 ease-in-out rounded-full border border-gray-50 dark:border-gray-100`}>
           {item2?.length > 0 && logoList?.reverse()?.map((elem, index) => (
             <>
-              {/* <div className={`${skillCard} hover:scale-150 group transition-all duration-200 skill_card ${index < 8 ? `skill_card${elem?.id}bottom` : `skill_card${elem?.id}top`} flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/10)] gap-2`} key={index}>
-              <img
-                className='md:w-[4vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 group-hover:bg-white dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
-                src={elem.image}
-                alt="Logo"
-                width={100}
-                height={100}
-              />
-              <div className='md:w-[10vw] w-[80%] text-center font-semibold text-md dark:text-gray-50 text-gray-800'>{elem?.name}</div>
-            </div> */}
-
-              <div style={{ position: 'absolute', translate: '-50% -50%', left: `${item2[index]?.x}px`, top: `${item2[index]?.y}px` }} className={`${skillCard} skill_card border border-gray-300 dark:border-gray-500 rounded-full w-[70px] h-[70px] hover:bg-white hover:scale-150 group transition-all duration-200 flex flex-col md:items-center md:justify-end gap-2  bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]`} key={index}>
+              <div style={{ position: 'absolute', translate: '-50% -50%', left: `${item2[index]?.x}px`, top: `${item2[index]?.y}px` }} className={`${skillCard} skill_card border border-gray-300 dark:border-gray-500 rounded-full w-[70px] h-[70px] hover:bg-white hover:scale-125 group transition-all duration-200 flex flex-col md:items-center md:justify-end gap-2  bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]`} key={index}>
                 <img
                   className='w-[100px] h-[100px] p-0.5 object-contain'
                   src={elem.image}
