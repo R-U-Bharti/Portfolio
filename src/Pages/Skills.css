@@ -13,7 +13,7 @@
 .skillList2 {
     animation: rotateAnimation01 50s linear infinite;
 }
-
+/* 
 .skill_card1top {
     top: -1%;
     left: 32%;
@@ -172,9 +172,9 @@
 .skill_card16bottom {
     bottom: 38%;
     left: -18px;
-}
+} */
 
-.stopSkillList1 {
+/* .stopSkillList1 {
     transform: rotate(0deg);
     transition: all;
     animation-duration: 200ms;
@@ -184,26 +184,26 @@
     transform: rotate(0deg);
     transition: all;
     animation-duration: 200ms;
-}
+} */
 
 @keyframes rotateAnimation0 {
     0% {
-        transform: rotate(0deg);
+        rotate: 0deg;
     }
 
     100% {
-        transform: rotate(-360deg);
+        rotate: -360deg;
     }
 
 }
 
 @keyframes rotateAnimation1 {
     0% {
-        transform: rotate(0deg);
+        rotate: 0deg;
     }
 
     100% {
-        transform: rotate(360deg);
+        rotate: 360deg;
     }
 
 }
@@ -211,11 +211,11 @@
 @keyframes rotateAnimation00 {
 
     0% {
-        transform: rotate(0deg);
+        rotate: 0deg;
     }
 
     100% {
-        transform: rotate(360deg);
+        rotate: 360deg;
     }
 
 }
@@ -223,11 +223,11 @@
 @keyframes rotateAnimation01 {
 
     0% {
-        transform: rotate(0deg);
+        rotate: 0deg;
     }
 
     100% {
-        transform: rotate(-360deg);
+        rotate: -360deg;
     }
 
 }
