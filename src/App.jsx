@@ -104,7 +104,7 @@ function App() {
           </div>
         </Fade>
         <Fade fraction={0} duration={300} bottom>
-          <div id='skills' className='h-full md:h-max bg-transparent relative bg-gradient-to-t from-[#061a3681] via-[#203b7081] to-[#1d668881] dark:from-[#2b58976a] dark:via-[#1849aa6a] dark:to-[#1126306a] border-t border-b border-gray-400 dark:border-gray-200'>
+          <div id='skills' className='overflow-clip h-full md:h-max bg-transparent relative bg-gradient-to-t from-[#061a3681] via-[#203b7081] to-[#1d668881] dark:from-[#2b58976a] dark:via-[#1849aa6a] dark:to-[#1126306a] border-t border-b border-gray-400 dark:border-gray-200'>
             <div className='md:pt-10 pt-10 z-50'>
               <div className='z-50 w-full flex flex-col items-center justify-center gap-4 cursor-default group transition-all ease-in-out duration-1000 mb-28'>
                 <div className='satisfy text-3xl md:text-4xl text-center font-bold tracking-wide uppercase  bg-gradient-to-r dark:from-neonFade dark:to-purple-800 from-neonDark to-purple-800 dark:bg-white bg-clip-text text-transparent noto'>Skills</div>

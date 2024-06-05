@@ -55,7 +55,7 @@
 }
 
 .skill_card9top {
-     top: -1%;
+    top: -1%;
     left: 32%;
 }
 
@@ -70,22 +70,22 @@
 }
 
 .skill_card12top {
-     top: 8%;
+    top: 8%;
     left: 14%;
 }
 
 .skill_card13top {
-     top: 21%;
+    top: 21%;
     right: 4%;
 }
 
 .skill_card14top {
-     top: 21%;
+    top: 21%;
     left: 4%;
 }
 
 .skill_card15top {
-     top: 38%;
+    top: 38%;
     right: -18px;
 }
 
@@ -94,47 +94,47 @@
     left: -18px;
 }
 
-.skill_card1bottom{
+.skill_card1bottom {
     bottom: -1%;
     left: 32%;
 }
 
-.skill_card2bottom{
+.skill_card2bottom {
     bottom: -1%;
     right: 32%;
 }
 
-.skill_card3bottom{
+.skill_card3bottom {
     bottom: 8%;
     right: 14%;
 }
 
-.skill_card4bottom{
+.skill_card4bottom {
     bottom: 8%;
     left: 14%;
 }
 
-.skill_card5bottom{
+.skill_card5bottom {
     bottom: 21%;
     right: 4%;
 }
 
-.skill_card6bottom{
+.skill_card6bottom {
     bottom: 21%;
     left: 4%;
 }
 
-.skill_card7bottom{
+.skill_card7bottom {
     bottom: 38%;
     right: -24px;
 }
 
-.skill_card8bottom{
+.skill_card8bottom {
     bottom: 38%;
     left: -24px;
 }
 
-.skill_card9bottom{
+.skill_card9bottom {
     bottom: -1%;
     left: 32%;
 }
@@ -172,6 +172,18 @@
 .skill_card16bottom {
     bottom: 38%;
     left: -18px;
+}
+
+.stopSkillList1 {
+    transform: rotate(0deg);
+    transition: all;
+    animation-duration: 200ms;
+}
+
+.stopSkillList2 {
+    transform: rotate(0deg);
+    transition: all;
+    animation-duration: 200ms;
 }
 
 @keyframes rotateAnimation0 {
