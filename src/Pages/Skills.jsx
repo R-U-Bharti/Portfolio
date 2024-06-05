@@ -78,11 +78,30 @@ const Skills = () => {
     { id: 9, name: 'CSS 3', image: css, position: 'top-[0%] left-[40%]' },
     { id: 10, name: 'Express.js', image: express, position: 'top-[0%] left-[40%]' },
     { id: 11, name: 'React.js', image: reactJs, position: 'top-[0%] left-[40%]' },
-    { id: 12, name: 'React Native', image: reactNative, position: 'top-[0%] left-[40%]' },
-    { id: 13, name: 'Tailwind CSS', image: tailwind, position: 'top-[0%] left-[40%]' },
+    { id: 12, name: 'Tailwind CSS', image: tailwind, position: 'top-[0%] left-[40%]' },
+    { id: 13, name: 'React Native', image: reactNative, position: 'top-[0%] left-[40%]' },
     { id: 14, name: 'Redux', image: redux, position: 'top-[0%] left-[40%]' },
     { id: 15, name: 'PostgreSQL', image: pg, position: 'top-[0%] left-[40%]' },
     { id: 16, name: 'Docker', image: docker, position: 'top-[0%] left-[40%]' },
+  ]
+
+  let logoList2 = [
+    { id: 11, name: 'React.js', image: reactJs, position: 'top-[0%] left-[40%]' },
+    { id: 13, name: 'Tailwind CSS', image: tailwind, position: 'top-[0%] left-[40%]' },
+    { id: 12, name: 'React Native', image: reactNative, position: 'top-[0%] left-[40%]' },
+    { id: 14, name: 'Redux', image: redux, position: 'top-[0%] left-[40%]' },
+    { id: 7, name: 'Node.js', image: node, position: 'top-[0%] left-[40%]' },
+    { id: 10, name: 'Express.js', image: express, position: 'top-[0%] left-[40%]' },
+    { id: 15, name: 'PostgreSQL', image: pg, position: 'top-[0%] left-[40%]' },
+    { id: 16, name: 'Docker', image: docker, position: 'top-[0%] left-[40%]' },
+    { id: 6, name: 'Git', image: git, position: 'top-[0%] left-[40%]' },
+    { id: 4, name: 'Next.js', image: next, position: 'top-[0%] left-[40%]' },
+    { id: 3, name: 'Socket.io', image: socket, position: 'top-[0%] left-[40%]' },
+    { id: 8, name: 'HTML 5', image: html, position: 'top-[0%] left-[40%]' },
+    { id: 9, name: 'CSS 3', image: css, position: 'top-[0%] left-[40%]' },
+    { id: 5, name: 'Bootstrap CSS', image: bootstrap, position: 'top-[0%] left-[40%]' },
+    { id: 1, name: 'Javascript', image: js, position: 'top-[0%] left-[40%]' },
+    { id: 2, name: 'MongoDB', image: mongo, position: 'top-[0%] left-[40%]' },
   ]
 
   logoList?.sort((a, b) => a.id - b.id);
@@ -94,7 +113,7 @@ const Skills = () => {
       <div className='md:h-[70vh] relative w-screen flex md:items-end justify-center'>
 
         <div className="md:hidden flex flex-wrap justify-center gap-10 -mt-16 ">
-          {logoList?.map((elem, index) => (
+          {logoList2?.map((elem, index) => (
             <div className="flex flex-col pl-16 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/8)] gap-2" key={index}>
               <img
                 className='md:w-[10vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 dark:border-gray-500 h-[7rem] md:h-[5rem] p-4 rounded-md object-contain bg-[#ffffff73] dark:bg-[#fff]/40 shadow-[0px_0px_10px_rgba(255,255,255,0.3)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
