@@ -53,7 +53,7 @@ const Skills = () => {
           {logoList?.map((elem, index) => (
             <div className="flex flex-col pl-16 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/8)] gap-2" key={index}>
               <img
-                className='md:w-[10vw] w-[80%] border border-gray-300 dark:border-gray-500 h-[7rem] md:h-[5rem] p-4 rounded-md object-contain bg-[#ffffff73] dark:bg-[#51505082] shadow-[0px_0px_10px_rgba(255,255,255,0.3)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='md:w-[10vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 dark:border-gray-500 h-[7rem] md:h-[5rem] p-4 rounded-md object-contain bg-[#ffffff73] dark:bg-[#fff]/40 shadow-[0px_0px_10px_rgba(255,255,255,0.3)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
@@ -68,7 +68,7 @@ const Skills = () => {
           {logoList?.map((elem, index) => (
             <div className={`${skillCard} hover:scale-150 group transition-all duration-200 skill_card ${index > 7 ? `skill_card${elem?.id}bottom` : `skill_card${elem?.id}top`} flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/10)] gap-2`} key={index}>
               <img
-                className='md:w-[4vw] w-[80%] border border-gray-300 group-hover:bg-white dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#fff]/30  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='md:w-[4vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 group-hover:bg-white dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
@@ -83,7 +83,7 @@ const Skills = () => {
           {logoList?.map((elem, index) => (
             <div className={`${skillCard} hover:scale-150 group transition-all duration-200 skill_card ${index < 8 ? `skill_card${elem?.id}bottom` : `skill_card${elem?.id}top`} flex flex-col pl-10 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/10)] gap-2`} key={index}>
               <img
-                className='md:w-[4vw] w-[80%] border border-gray-300 group-hover:bg-white dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#fff]/30  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='md:w-[4vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 group-hover:bg-white dark:border-gray-500 h-[7rem] rounded-full md:h-[4vw] p-4 object-contain bg-[#fffffff0] dark:bg-[#fff]/40  shadow-[0px_0px_10px_rgba(255,255,255,0.5)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
