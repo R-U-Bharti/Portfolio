@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <>
 
-      <div className='flex items-center gap-x-4 gap-y-6 flex-wrap justify-evenly px-6 md:px-0 '>
+      <div className='flex gap-x-4 gap-y-6 flex-wrap justify-evenly items-stretch px-6 md:px-0 '>
 
         {/* <div className='w-full hidden md:flex justify-center items-center md:w-[40%]'>
         <img  draggable="false"src="./exp.png" alt="" srcset="" className='image hover:scale-105 drop-shadow-2xl transition-all duration-300 hover:transform hover:scale-x-[0.7] hover:skew-y-3'/>

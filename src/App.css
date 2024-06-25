@@ -16,7 +16,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 10s linear;
   }
 }
 
@@ -51,7 +51,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  animation: animate 13s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 .background li:nth-child(0) {

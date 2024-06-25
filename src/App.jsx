@@ -96,40 +96,47 @@ function App() {
         </div>
 
         <Fade duration={300} bottom>
-          <div id='experience' className='h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b border-gray-400 dark:border-gray-200 relative'>
-            <div className=' p-4 md:pb-20 md:pt-10 z-50'>
-              <Heading title={'Work Experience'} logo={'./experienceLogo.webp'} />
-              <Experience />
-            </div>
-          </div>
-        </Fade>
-        <Fade fraction={0} duration={300} bottom>
-          <div id='skills' className='overflow-clip h-full md:h-max bg-transparent relative bg-gradient-to-t from-[#061a3681] via-[#203b7081] to-[#1d668881] dark:from-[#2b58976a] dark:via-[#1849aa6a] dark:to-[#1126306a] border-t border-b border-gray-400 dark:border-gray-200'>
-            <div className='md:pt-10 pt-10 z-50'>
-              <div className='z-50 w-full flex flex-col items-center justify-center gap-4 cursor-default group transition-all ease-in-out duration-1000 mb-28'>
-                <div className='satisfy text-3xl md:text-4xl text-center font-bold tracking-wide uppercase  bg-gradient-to-r dark:from-neonFade dark:to-purple-800 from-neonDark to-purple-800 dark:bg-white bg-clip-text text-transparent noto'>Skills</div>
-                <div className='bg-gray-500 dark:bg-white h-[0.3vh] w-[50vw] md:w-[20vw] group-hover:w-[60vw] md:group-hover:w-[30vw] transition-all ease-in-out duration-500'></div>
+          <div id='experience' className='center-tag h-full md:h-max bg-transparent backdrop-blur-lg border-t border-b border-gray-400 dark:border-gray-200 relative'>
+            <div className='max-width'>
+              <div className=' p-4 md:pb-20 md:pt-10 z-50'>
+                <Heading title={'Work Experience'} logo={'./experienceLogo.webp'} />
+                <Experience />
               </div>
-              <Skills />
             </div>
           </div>
         </Fade>
 
         <Fade fraction={0} duration={300} bottom>
-          <div id='Contact' className='h-full md:h-max backdrop-blur-lg border-t border-b border-gray-400 dark:border-gray-200 relative'>
-            <div className=' p-4 z-50'>
-              <Heading title={"Drop a message"} logo={'./experienceLogo.webp'} />
-              <Contact />
+          <div id='skills' className='center-tag overflow-clip h-full md:h-max relative bg-transparent bg-gradient-to-t from-[#061a3681] via-[#203b7081] to-[#1d668881] dark:from-[#2b58976a] dark:via-[#1849aa6a] dark:to-[#1126306a] border-t border-b border-gray-400 dark:border-gray-200'>
+            <div className='max-width'>
+              <div className='md:pt-10 pt-10 z-50'>
+                <div className='z-50 w-full flex flex-col items-center justify-center gap-4 cursor-default group transition-all ease-in-out duration-1000 mb-28'>
+                  <div className='satisfy text-3xl md:text-4xl text-center font-bold tracking-wide uppercase  bg-gradient-to-r dark:from-neonFade dark:to-purple-800 from-neonDark to-purple-800 dark:bg-white bg-clip-text text-transparent noto'>Skills</div>
+                  <div className='bg-gray-500 dark:bg-white h-[0.3vh] w-[50vw] md:w-[20vw] group-hover:w-[60vw] md:group-hover:w-[30vw] transition-all ease-in-out duration-500'></div>
+                </div>
+                <Skills />
+              </div>
             </div>
           </div>
-          <div className='z-50 dark:bg-black/80 bg-white/50 text-center font-semibold tracking-wider dark:text-white border-t text-black/80 text-xs py-1'>
-        Designed By @ R U Bharti
-      </div>
+        </Fade>
+
+        <Fade fraction={0} duration={300} bottom>
+          <div id='Contact' className='center-tag h-full md:h-max backdrop-blur-lg border-t border-b border-gray-400 dark:border-gray-200 relative'>
+            <div className='max-width'>
+              <div className=' p-4 z-50'>
+                <Heading title={"Drop a message"} logo={'./experienceLogo.webp'} />
+                <Contact />
+              </div>
+            </div>
+          </div>
+          <div className='z-50 dark:bg-black/80 bg-white/50 text-center tracking-wider dark:text-white border-t text-black/80 2xl:text-sm text-xs py-2'>
+            Designed By @ R U Bharti
+          </div>
         </Fade>
 
         {
           isVisible &&
-          <div onClick={handleBackToTop} className='bg-neon w-max md:p-4 p-2 hover:animate-bounce md:text-xl text-md rounded-full fixed bottom-4 right-2 md:bottom-2 md:right-2 hover:bg-neonDark hover:shadow-md hover:shadow-neon border border-neonDark hover:border-neonFade transition-all duration-300 cursor-pointer group'>
+          <div onClick={handleBackToTop} className='bg-neon w-max md:p-4 p-2 hover:animate-bounce md:text-base 2xl:text-xl text-md rounded-full fixed bottom-4 right-2 md:bottom-2 md:right-2 hover:bg-neonDark hover:shadow-md hover:shadow-neon border border-neonDark hover:border-neonFade transition-all duration-300 cursor-pointer group'>
             <a className='transform group-hover:translate-y-6 text-white '><BiSolidUpArrow /></a>
           </div>
         }

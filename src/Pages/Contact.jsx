@@ -83,8 +83,8 @@ const Contact = () => {
   return (
     <>
 
-      <div class="container my-24 mx-auto md:px-6">
-        <section class="mb-32">
+      <div class="container mt-24 mb-16 mx-auto md:px-6">
+        <section class="mb-4">
           <div
             className={`main_container relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat`}>
           </div>
