@@ -97,7 +97,7 @@ function Home() {
 
                     </div>
 
-                    <p className="w-full mt-4">
+                    <p className="w-full mt-4 text-justify">
                         As a passionate, I'm thrilled to announce that I'm open for new and exciting projects. From 🚀 WEB DEVELOPMENT to APP CREATION 🚀, let's collaborate and bring your visions to reality.  💼✨ Drop me a message and let's get started.
                         <br />
                         <br />
