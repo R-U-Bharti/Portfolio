@@ -45,9 +45,10 @@ const Contact = () => {
       setLoader(true)
 
       const fd = new FormData();
+      fd.append('timestamp', new Date());
       fd.append('name', formData?.name);
-      fd.append('email', formData?.email);
-      fd.append('mobile', formData?.mobile);
+      fd.append('email', formData?.email || '');
+      fd.append('mobile', formData?.mobile || '');
       fd.append('message', formData?.message);
 
       const response = await fetch(url, {
