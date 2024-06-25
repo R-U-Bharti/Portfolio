@@ -75,7 +75,6 @@ function App() {
       <div className='relative noto'>
 
 
-        <div id='home' className='md:h-[100vh] p-4 md:p-8 dark:bg-[#16171d] bg-[#f9f9f9]'>
           <ul class="background dark:bg-[#0a0a0a] bg-gray-100">
             <li className='dark:bg-[#ffffff54] bg-[#a8a8a854]'></li>
             <li className='dark:bg-[#ffffff54] bg-[#a8a8a854]'></li>
@@ -89,6 +88,7 @@ function App() {
             <li className='dark:bg-[#ffffff54] bg-[#a8a8a854]'></li>
           </ul>
 
+        <div id='home' className=' h-full p-4 md:p-8 dark:bg-[#16171d] bg-[#f9f9f9]'>
           <Navbar />
           <Fade duration={300} bottom >
             <Home />
