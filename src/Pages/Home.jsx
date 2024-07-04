@@ -65,7 +65,7 @@ function Home() {
     return (
         <>
             <div className="center-tag">
-                <div className="max-width flex md:flex-row flex-col-reverse items-start justify-between px-6 md:px-0 2xl:mt-32 md:mt-24 mt-14 -mb-[8vh]">
+                <div className="max-width flex md:flex-row flex-col-reverse items-start justify-between px-6 md:px-0 2xl:mt-32 md:mt-24 mt-14 -mb-[3vh] md:-mb-[8vh]">
 
                 <div className="flex flex-col gap-4 md:gap-6 md:w-1/2 w-full">
                     <div className="text-4xl md:text-[2.75vw] font-bold leading-none animate__animated animate__fadeInLeft animate__faster">Welcome To My Portfolio</div>
