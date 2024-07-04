@@ -42,7 +42,7 @@ const Navbar = () => {
                 <a href={elem?.link} className='hover:text-neon md:text-[1.1vw] hover:drop-shadow'>{elem?.name}</a>
               </>)
             }
-            <a target='_blank' href={"https://r-u-bharti.github.io/demos"} className='hover:text-neon md:text-[1.1vw] hover:drop-shadow'>Gen AI</a>
+            <a target='_blank' href={"https://r-u-bharti.github.io/demos"} className='hover:text-yellow-500 md:text-[1.1vw] hover:drop-shadow'>Gen AI ✨</a>
             {/* <button className='text-sm button1 px-4 py-2 dark:text-white text-black hover:text-white' onClick={() => setModalOpen(true)} >Download CV</button> */}
             <a href='./Resume.pdf' download={true} className='text-xs button1 px-4 py-2 dark:text-white text-black hover:text-white'>Download CV</a>
           </div>
@@ -64,8 +64,8 @@ const Navbar = () => {
                 </a>
               </>)
             }
-            <a onClick={() => handleToggleClick()} target='_blank' href={'https://r-u-bharti.github.io/demos'} className='group hover:text-neon font-semibold hover:drop-shadow pb-2 w-[40vw] text-center'>
-              <span>Gen AI</span>
+            <a onClick={() => handleToggleClick()} target='_blank' href={'https://r-u-bharti.github.io/demos'} className='group hover:text-yello-500 font-semibold hover:drop-shadow pb-2 w-[40vw] text-center'>
+              <span>Gen AI ✨</span>
               <div className='transition-all duration-500 ease-in-out mt-2 h-[0vh] group-hover:h-[0.1vh] w-[0vw] group-hover:w-[40vw] bg-gray-900 dark:bg-white'></div>
             </a>
             {/* <button onClick={() => (setModalOpen(true), setIsToggled(false))} className='text-sm button px-4 py-2 bg-white dark:bg-black dark:text-white text-black hover:bg-white hover:text-black'>Download CV</button> */}
