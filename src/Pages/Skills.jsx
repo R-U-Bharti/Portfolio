@@ -14,6 +14,7 @@ import reactNative from '../assets/logo/React Native.png'
 import redux from '../assets/logo/Redux.png'
 import socket from '../assets/logo/Socket IO.png'
 import tailwind from '../assets/logo/Taiwind CSS.png'
+import firebase from '../assets/logo/firebase.png'
 import skillBackground from '../assets/skillBackground.webp'
 import './Skills.css'
 import { useEffect, useRef, useState } from 'react'
@@ -32,7 +33,7 @@ const Skills = () => {
       const circle = circleRef1.current;
       const radius = circle.offsetWidth / 2;
       const itemRadius = 50; // items width (100px/2) = 50
-      const itemsCount = 16;
+      const itemsCount = 17;
       const newItems = [];
 
       for (let i = 0; i < itemsCount; i++) {
@@ -51,7 +52,7 @@ const Skills = () => {
       const circle = circleRef2.current;
       const radius = circle.offsetWidth / 2;
       const itemRadius = 50; // items width (100px/2) = 50
-      const itemsCount = 16;
+      const itemsCount = 17;
       const newItems = [];
 
       for (let i = 0; i < itemsCount; i++) {
@@ -70,6 +71,7 @@ const Skills = () => {
     { id: 1, name: 'Javascript', image: js, position: 'top-[0%] left-[40%]' },
     { id: 2, name: 'MongoDB', image: mongo, position: 'top-[0%] left-[40%]' },
     { id: 3, name: 'Socket.io', image: socket, position: 'top-[0%] left-[40%]' },
+    { id: 4, name: 'Firebase', image: firebase, position: 'top-[0%] left-[40%]' },
     { id: 4, name: 'Next.js', image: next, position: 'top-[0%] left-[40%]' },
     { id: 5, name: 'Bootstrap CSS', image: bootstrap, position: 'top-[0%] left-[40%]' },
     { id: 6, name: 'Git', image: git, position: 'top-[0%] left-[40%]' },
@@ -95,6 +97,7 @@ const Skills = () => {
     { id: 15, name: 'PostgreSQL', image: pg, position: 'top-[0%] left-[40%]' },
     { id: 16, name: 'Docker', image: docker, position: 'top-[0%] left-[40%]' },
     { id: 6, name: 'Git', image: git, position: 'top-[0%] left-[40%]' },
+    { id: 6, name: 'Firebase', image: firebase, position: 'top-[0%] left-[40%]' },
     { id: 4, name: 'Next.js', image: next, position: 'top-[0%] left-[40%]' },
     { id: 3, name: 'Socket.io', image: socket, position: 'top-[0%] left-[40%]' },
     { id: 8, name: 'HTML 5', image: html, position: 'top-[0%] left-[40%]' },
@@ -112,17 +115,17 @@ const Skills = () => {
     <div className='md:h-[70vh] w-auto md:pt-[19.5rem] md:pb-0 pb-10'>
       <div className='md:h-[70vh] relative w-full flex md:items-end justify-center'>
 
-        <div className="md:hidden flex flex-wrap justify-center gap-10 -mt-16 ">
+        <div className="md:hidden flex flex-wrap justify-center gap-x-2 gap-y-4 -mt-16 ">
           {logoList2?.map((elem, index) => (
-            <div className="flex flex-col pl-16 md:pl-0 md:items-center md:justify-end w-full md:w-[calc(100%/8)] gap-2" key={index}>
+            <div className="flex flex-col items-center w-[30%] gap-2" key={index}>
               <img
-                className='md:w-[10vw] w-[80%] dark:saturate-200 dark:hover:saturate-150 border border-gray-300 dark:border-gray-500 h-[7rem] md:h-[5rem] p-4 rounded-md object-contain bg-[#ffffff73] dark:bg-[#fff]/40 shadow-[0px_0px_10px_rgba(255,255,255,0.3)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
+                className='h-[25vw] w-[25vw] dark:saturate-200 dark:hover:saturate-50 border border-gray-300 dark:border-gray-500 p-6 rounded-full object-contain bg-[#ffffff73] dark:bg-[#fff]/40 shadow-[0px_0px_10px_rgba(255,255,255,0.3)] dark:shadow-[0px_0px_10px_rgba(0,0,0,0.5)]'
                 src={elem.image}
                 alt="Logo"
                 width={100}
                 height={100}
               />
-              <div className='md:w-[10vw] w-[80%] text-center font-semibold text-md'>{elem?.name}</div>
+              <div className='w-full text-center font-semibold text-md'>{elem?.name}</div>
             </div>
           ))}
         </div>
