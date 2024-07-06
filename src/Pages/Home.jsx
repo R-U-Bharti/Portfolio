@@ -104,8 +104,8 @@ function Home() {
                             </div>
 
                             <div className='w-full flex flex-wrap justify-center text-start'>
-                                <span className="w-[7%] md:w-[4%]">👯</span> <span className="w-[93%] md:w-[96%]">I&apos;m looking to collaborate on innovative mobile and web development projects.</span>
-                                <span className="w-[7%] md:w-[4%]">🤝</span> <span className="w-[93%] md:w-[96%]">I&apos;m eager to contribute to challenging projects that push the boundaries of technology.</span>
+                                <span className="w-[7%] md:w-[4%]">👯</span> <span className="w-[93%] md:w-[96%]">Looking to take or collaborate on innovative mobile and web development projects.</span>
+                                <span className="w-[7%] md:w-[4%]">🤝</span> <span className="w-[93%] md:w-[96%]">Eager to contribute to challenging projects that push the boundaries of technology.</span>
                                 <span className="w-[7%] md:w-[4%]">💬</span> <span className="w-[93%] md:w-[96%]">Ask me about full stack development and creating seamless mobile and web applications.</span>
                             </div>
 
