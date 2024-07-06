@@ -109,7 +109,7 @@ function Home() {
                                 <span className="w-[7%] md:w-[4%]">💬</span> <span className="w-[93%] md:w-[96%]">Ask me about full stack development and creating seamless mobile and web applications.</span>
                             </div>
 
-                            <div className='text-start'>
+                            <div className='text-justify'>
                                 💼 Let's collaborate and make your vision a reality.🚀✨<br />
                                 Feel free to connect 🤝 me through below 👇 links 📎
                             </div>
