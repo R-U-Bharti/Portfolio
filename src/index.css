@@ -34,6 +34,10 @@
   height: 9px;
 }
 
+div {
+  cursor: url(https://img.icons8.com/?size=30&id=rKqQiYPTkVLU&format=png&color=161c38), auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,7 +57,8 @@
   .center-tag {
     @apply w-auto flex justify-center items-center;
   }
-  .max-width{
+
+  .max-width {
     @apply w-full max-w-[1366px];
   }
 }
