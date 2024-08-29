@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useRef} from 'react'
 import './Contact.css'
 import toast from 'react-hot-toast'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
   const [loader, setLoader] = useState(false)
   const [formData, setFormData] = useState(null)
+
+  const formRef = useRef()
 
   const handleSubmit = async (e) => {
 
@@ -21,8 +24,8 @@ const Contact = () => {
       return
     }
 
-    if (!formData?.email && !formData?.mobile) {
-      toast.error("Please enter email or mobile, so that I contact you.")
+    if (!formData?.email) {
+      toast.error("Please enter email address, so that I contact you.")
       return
     }
 
@@ -40,6 +43,20 @@ const Contact = () => {
 
 
     let url = 'https://script.google.com/macros/s/AKfycbykNpQE8WZAA18_2rhAOQWTbKLpCL4xz8nDZ1bR0VWqRTUiBhmNialNgx8rHbYneT6S/exec'
+    
+    emailjs
+    .sendForm('service_41ertxj', 'template_fbossk9', formRef.current, {
+      publicKey: '9FwUzUAZFwjbFNAxc',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        toast.success('Message sent successfully');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
 
     try {
       setLoader(true)
@@ -62,7 +79,7 @@ const Contact = () => {
         e.target.querySelector('textarea').value = '';
       } else {
         // Handle error
-        toast.error('Please try again later.');
+        // toast.error('Please try again later.');
       }
     } catch (error) {
       toast.error('Please try again later.');
@@ -128,7 +145,7 @@ const Contact = () => {
               </div>
 
               <div class="mx-auto max-w-[700px]">
-                <form onSubmit={handleSubmit} onChange={handleChange}>
+                <form ref={formRef} onSubmit={handleSubmit} onChange={handleChange}>
                   <div class="relative mb-6" data-te-input-wrapper-init>
                     <input type="text"
                       name='name'
