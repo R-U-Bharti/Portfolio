@@ -24,8 +24,8 @@ const Contact = () => {
       return
     }
 
-    if (!formData?.email) {
-      toast.error("Please enter email address, so that I contact you.")
+    if (!formData?.email && !formData?.mobile) {
+      toast.error("Please enter email or mobile, so that I contact you.")
       return
     }
 
