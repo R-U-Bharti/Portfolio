@@ -82,7 +82,7 @@ const Contact = () => {
         // toast.error('Please try again later.');
       }
     } catch (error) {
-      toast.error('Please try again later.');
+      // toast.error('Please try again later.');
       console.error('An error occurred:', error);
     } finally {
       setLoader(false)
